@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.xslider.android.samples.MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#795548"
+        android:textSize="18sp"
+        tools:text="Hello World!" />
+
+    <com.xslider.android.XSlider
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#f0f0f0"
+        app:xslider_maxValue="100"
+        app:xslider_minValue="0"
+        app:xslider_progressColor="#00BCD4"
+        app:xslider_thumbColor="#009688"
+        app:xslider_thumbHeight="12dp"
+        app:xslider_thumbRadius="6dp"
+        app:xslider_thumbType="oval"
+        app:xslider_thumbWidth="12dp"
+        app:xslider_trackColor="#a0a0a0"
+        app:xslider_trackSize="4dp"
+        app:xslider_value="50" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="100" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Set Value: 60"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Set Value Range: 10~80"
+        android:textAllCaps="false" />
+
+</LinearLayout>

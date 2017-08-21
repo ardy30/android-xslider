@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- XSlider attrs -->
+    <declare-styleable name="XSlider">
+
+        <attr name="android:enabled" />
+
+        <!-- 滑动条的颜色 -->
+        <attr name="xslider_trackColor" format="reference|color" />
+
+        <!-- 进度条的颜色 -->
+        <attr name="xslider_progressColor" format="reference|color" />
+
+        <!-- 滑块的颜色 -->
+        <attr name="xslider_thumbColor" format="reference|color" />
+
+        <!-- 滑动条的高度 -->
+        <attr name="xslider_trackSize" format="reference|dimension" />
+
+        <!-- 滑动条的值 -->
+        <attr name="xslider_value" format="reference|integer" />
+
+        <!-- 滑动条的最小值 -->
+        <attr name="xslider_minValue" format="reference|integer" />
+
+        <!-- 滑动条的最大值 -->
+        <attr name="xslider_maxValue" format="reference|integer" />
+
+        <!-- 滑块的形状: 圆形、圆角矩形 -->
+        <attr name="xslider_thumbType" format="integer">
+            <enum name="oval" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+
+        <!-- 滑块的半径, 如果是圆形该值是圆形的半径, 如果是圆角矩形是圆角的半径 -->
+        <attr name="xslider_thumbRadius" format="reference|dimension" />
+
+        <!-- 滑块的宽度 -->
+        <attr name="xslider_thumbWidth" format="reference|dimension" />
+
+        <!-- 滑块的高度 -->
+        <attr name="xslider_thumbHeight" format="reference|dimension" />
+
+    </declare-styleable>
+
+</resources>
